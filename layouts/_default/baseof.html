@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{ partial "meta.html" . }}
+        {{ if .IsPage }}
+        <p class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></p>
+        {{ else }}
+        <h1 class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></h1>
+        {{ end }}
+        {{ with .Site.Params.subtitle }}
+        <p class="p-subtitle">
+            {{ . }}
+        </p>
+        {{ end }}
+    </head>
+    <body>
+        {{ block "main" . }}
+        {{ end }}
+        {{ block "footer" . }}
+        {{ end }}
+    </body>
+</html>
