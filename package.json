@@ -1,0 +1,18 @@
+{
+    "name": "hugo-theme-waterfront",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "hugo": "hugo server -t hugo-theme-waterfront",
+        "stylus": "stylus src/css/import.styl --out static/css/style.css --include-css",
+        "watch": "stylus -w src/css/import.styl --out static/css/style.css --include-css"
+    },
+    "author": "kajihaya",
+    "license": "MIT",
+    "devDependencies": {
+        "stylus": "^0.54.5"
+    },
+    "dependencies": {
+    }
+}
