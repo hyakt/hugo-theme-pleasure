@@ -2,21 +2,39 @@
 <html lang="{{ .Site.LanguageCode }}">
     <head>
         {{ partial "meta.html" . }}
-        {{ if .IsPage }}
-        <p class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></p>
-        {{ else }}
-        <h1 class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></h1>
-        {{ end }}
-        {{ with .Site.Params.subtitle }}
-        <p class="p-subtitle">
-            {{ . }}
-        </p>
-        {{ end }}
+        <link href="https://fonts.googleapis.com/css?family=Lato|Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
     </head>
+
     <body>
-        {{ block "main" . }}
-        {{ end }}
-        {{ block "footer" . }}
-        {{ end }}
+        <header>
+            <div class="container">
+                {{ if .IsPage }}
+                <p class="title">
+                    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                </p>
+                {{ else }}
+                <h1 class="title">
+                    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                </h1>
+                {{ end }}
+                {{ with .Site.Params.subtitle }}
+                <p class="subtitle">
+                    {{ . }}
+                </p>
+                {{ end }}
+            </div>
+        </header>
+
+        <div class="container">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+
+        <div class="container">
+            <footer>
+                footer
+            </footer>
+        </div>
     </body>
 </html>
