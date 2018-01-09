@@ -11,7 +11,7 @@
   .container .subtitle
     font-size: 18px
 
-.post
+.summary
   padding: 30px
   margin: 10px 0 0 10px
   border-radius: 4px
@@ -26,8 +26,76 @@
       color: deepblue
       font-size:17px
       margin: 7px 0 7px 0
-  summary
+  section
     margin: 10px 0 10px 0
   footer
     a{ color: seablue }
     text-align: right
+
+.post
+  padding: 30px
+  margin: 10px 0 0 10px
+  border-radius: 4px
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: white
+  header
+    font-weight: bold
+    margin: 1rem 0
+    h2
+      font-size:26px
+      margin: 5px 0 5px 0
+    .post-meta
+      color: deepblue
+      font-size:17px
+      margin: 7px 0 7px 0
+
+  article
+    h2
+      padding: 1rem 0 0.5rem
+      border-bottom: 2px solid background
+    h2:first-child
+      margin-top: 0
+    h3
+      color: deepblue
+    h4
+      border-left: solid .25rem deepblue
+      padding: 0 .5rem
+    p
+      margin: 1.5rem 0
+      line-height: 1.5rem
+    a
+      text-decoration: underline
+    ul,ol
+      padding-left: 1.5rem
+    code
+      display: inline-block
+      font-family: Menlo, consolas, monospace
+      background-color: #eceff1
+      font-size: .8rem
+      padding: 0 .5rem
+      line-height: 1.5rem
+    pre
+      margin: 1.5rem 0
+      padding: 1.5rem
+      font-size: .8rem
+      background-color: #263238
+      color: #fff
+      overflow: auto
+      code
+        background-color: transparent
+    blockquote
+      margin: 1.5rem
+      padding: .5rem 0
+      font-size: .8rem
+      border-top: 1px solid #eceff1
+      border-bottom: 1px solid #eceff1
+      color: #607d8b
+      p
+        margin: .5rem 0
+        line-height: 1rem
+    strong
+      box-shadow: 0 -.5rem 0 0 #f06292 inset
+    em
+      font-style: normal
+      font-weight: 700
+      color: #ff5722
