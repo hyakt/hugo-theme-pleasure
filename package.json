@@ -5,13 +5,16 @@
     "main": "index.js",
     "scripts": {
         "hugo": "hugo server -t hugo-theme-waterfront",
-        "stylus": "stylus src/css/import.styl --out static/css/style.css --include-css",
-        "watch": "stylus -w src/css/import.styl --out static/css/style.css --include-css"
+        "build:css": "stylus -c src/stylus/import.styl --out static/css/style.css --include-css",
+        "watch:css": "stylus -w src/stylus/import.styl --out static/css/style.css --include-css"
     },
     "author": "kajihaya",
     "license": "MIT",
     "devDependencies": {
         "stylus": "^0.54.5"
     },
-    "dependencies": {}
+    "dependencies": {
+        "highlight.js": "^9.12.0",
+        "normalize.css": "^7.0.0"
+    }
 }
