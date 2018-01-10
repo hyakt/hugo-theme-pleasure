@@ -1,37 +1,38 @@
+base-article()
+  padding: 1.5rem
+  margin: 1rem 0
+  border-radius: 4px
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  background: white
+  header
+    font-weight: bold
+    h2
+      font-size: 1.7rem
+      margin: 0.5rem 0
+    .post-meta
+      color: deepblue
+      font-size: 1.2rem
+      margin: 1rem 0
+
 .header
   text-decoration: none
   background: background
   font-family: 'Varela Round', sans-serif
-  padding: 10px
+  padding: 1rem
   margin: 0 auto
-  margin-left: 10px
   .container .title
-    font-size: 30px
+    font-size: 2rem
     a{ color: deepblue }
   .container .subtitle
-    font-size: 18px
+    font-size: 1rem
 
 .footer
   font-family: 'Varela Round', sans-serif
   text-align: center
   margin: 2rem 0
 
-
 .summary
-  padding: 30px
-  margin: 10px 0 0 10px
-  border-radius: 4px
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: white
-  header
-    font-weight: bold
-    h2
-      font-size:26px
-      margin: 5px 0 5px 0
-    .post-meta
-      color: deepblue
-      font-size:17px
-      margin: 7px 0 7px 0
+  base-article: 0
   article
     margin: 10px 0 10px 0
   footer
@@ -39,24 +40,10 @@
     text-align: right
 
 .post
-  padding: 30px
-  margin: 10px 0 0 10px
-  border-radius: 4px
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: white
-  header
-    font-weight: bold
-    margin: 1rem 0
-    h2
-      font-size:26px
-      margin: 5px 0 5px 0
-    .post-meta
-      color: deepblue
-      font-size:17px
-      margin: 7px 0 7px 0
-
+  base-article: 0
   article
     h2
+      font-size: 1.6rem 
       padding: 1rem 0 0.5rem
       border-bottom: 2px solid background
     h2:first-child
@@ -76,7 +63,6 @@
     code
       display: inline-block
       font-family: Menlo, consolas, monospace
-      background-color: #eceff1
       font-size: .8rem
       padding: 0 .5rem
       line-height: 1.5rem
