@@ -10,18 +10,18 @@
         <div class="header">
             <div class="container">
                 {{ if .IsPage }}
-                <p class="title">
+                <h1 class="title">
                     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-                </p>
+                </h1>
                 {{ else }}
                 <h1 class="title">
                     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
                 </h1>
-                {{ end }}
                 {{ with .Site.Params.subtitle }}
                 <p class="subtitle">
                     {{ . }}
                 </p>
+                {{ end }}
                 {{ end }}
             </div>
         </div>
