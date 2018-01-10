@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div class="header">
+        <header class="header">
             <div class="container">
                 {{ if .IsPage }}
                 <h1 class="title">
@@ -24,7 +24,7 @@
                 {{ end }}
                 {{ end }}
             </div>
-        </div>
+        </header>
 
         <div class="container">
             {{ block "main" . }}
@@ -33,7 +33,26 @@
 
         <div class="container">
             <footer class="footer">
-                footer
+                <p class="copyright">
+                    {{ with .Site.Copyright | safeHTML }}
+                    {{ . }}
+                    {{ else }}
+                    {{ if .Site.Params.author }}
+                    {{ if .Site.Params.authorwebsite }}
+                    <a href="{{ .Site.Params.authorwebsite }}">{{ .Site.Params.author }}</a>
+                    {{ else }}
+                    {{ .Site.Params.author }}
+                    {{ end }}
+                    {{ end }}
+                    &nbsp;&bull;&nbsp;
+                    {{ .Site.LastChange.Format "2006" }}
+
+                    {{ if .Site.Title }}
+                    &nbsp;&bull;&nbsp;
+                    <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+                    {{ end }}
+                    {{ end }}
+                </p>
             </footer>
         </div>
     </body>
