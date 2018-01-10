@@ -1,1 +1,2 @@
-var highlight = require("highlight.js");
+var hljs = require("highlight.js")
+hljs.initHighlightingOnLoad()

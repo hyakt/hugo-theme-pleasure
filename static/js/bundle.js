@@ -67,7 +67,8 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var highlight = __webpack_require__(1);
+var hljs = __webpack_require__(1)
+hljs.initHighlightingOnLoad()
 
 
 /***/ }),
