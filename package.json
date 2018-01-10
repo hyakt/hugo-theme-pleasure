@@ -6,12 +6,15 @@
     "scripts": {
         "hugo": "hugo server -t hugo-theme-waterfront",
         "build:css": "stylus -c src/stylus/import.styl --out static/css/style.css --include-css",
-        "watch:css": "stylus -w src/stylus/import.styl --out static/css/style.css --include-css"
+        "watch:css": "stylus -w src/stylus/import.styl --out static/css/style.css --include-css",
+        "build:js": "webpack src/js/main.js static/js/bundle.js --progress --colors",
+        "watch:js": "webpack src/js/main.js static/js/bundle.js --progress --colors --watch"
     },
     "author": "kajihaya",
     "license": "MIT",
     "devDependencies": {
-        "stylus": "^0.54.5"
+        "stylus": "^0.54.5",
+        "webpack": "^3.10.0"
     },
     "dependencies": {
         "highlight.js": "^9.12.0",
