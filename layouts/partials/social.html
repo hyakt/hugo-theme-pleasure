@@ -1,0 +1,33 @@
+<ul class="social">
+    {{ with .Site.Params.twitter }}
+    <span class="fa-stack fa-lg">
+        <a href="https://twitter.com/{{ . }}" target="_blank">
+            <i class="fa fa-circle fa-stack-2x twitter"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </span>
+    {{ end }}
+    {{ with .Site.Params.github }}
+    <span class="fa-stack fa-lg">
+        <a href="https://github.com/{{ . }}" target="_blank">
+            <i class="fa fa-github fa-stack-2x" aria-hidden="true"></i>
+        </a>
+    </span>
+    {{ end }}
+    {{ with .Site.Params.linkedin }}
+    <span class="fa-stack fa-lg">
+        <a href="https://linkedin.com/in/{{ . }}" target="_blank">
+            <i class="fa fa-circle fa-stack-2x linkedin"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </span>
+    {{ end }}
+    {{ with .Site.Params.facebook }}
+    <span class="fa-stack fa-lg">
+        <a href="https://facebook.com/{{ . }}" target="_blank">
+            <i class="fa fa-circle fa-stack-2x facebook"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+        </a>
+    </span>
+    {{ end }}
+</ul>
