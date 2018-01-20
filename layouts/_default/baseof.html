@@ -2,7 +2,6 @@
 <html lang="{{ .Site.LanguageCode }}">
     <head>
         {{ partial "meta.html" . }}
-        <link href="https://fonts.googleapis.com/css?family=Lato|Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
     </head>
 
@@ -23,6 +22,7 @@
                 </p>
                 {{ end }}
                 {{ partial "social.html" . }}
+                {{ partial "separater.html" . }}
                 {{ end }}
             </div>
         </header>
