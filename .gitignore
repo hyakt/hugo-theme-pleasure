@@ -2,7 +2,3 @@
 node_modules/
 package-lock.json
 .tern-port
-static/fonts/
-static/css/style.css
-static/js/bundle.js
-

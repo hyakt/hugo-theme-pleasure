@@ -1,11 +1,10 @@
 {
-    "name": "hugo-theme-waterfront",
+    "name": "hugo-theme-pleasure",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "hugo": "hugo server -t hugo-theme-waterfront",
-        "init": "cp -aR node_modules/font-awesome/fonts static",
+        "hugo": "hugo server -t hugo-theme-pleasure",
         "build:css": "stylus -c src/stylus/import.styl --out static/css/style.css --include-css",
         "watch:css": "stylus -w src/stylus/import.styl --out static/css/style.css --include-css",
         "build:js": "webpack src/js/main.js static/js/bundle.js --progress --colors",
@@ -18,7 +17,6 @@
         "webpack": "^3.10.0"
     },
     "dependencies": {
-        "font-awesome": "^4.7.0",
         "highlight.js": "^9.12.0",
         "normalize.css": "^7.0.0"
     }
