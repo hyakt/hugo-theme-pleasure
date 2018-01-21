@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
     <head>
         {{ partial "meta.html" . }}
+        <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
         <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="all" />
     </head>
 
