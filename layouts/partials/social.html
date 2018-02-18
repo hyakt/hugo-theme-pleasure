@@ -1,4 +1,15 @@
 <ul class="social">
+    {{ if .Site.Params.about }}
+    <span class="fa-stack fa-lg">
+        <a href="{{ .Site.Params.about }}">
+            {{ if .Site.Params.mail }}
+            <img class="fa fa-user fa-stack-1x fa-inverse" src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.mail }}?d=identicon">
+            {{ else }}
+            <i class="fa fa-user fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            {{ end }}
+        </a>
+    </span>
+    {{ end }}
     {{ with .Site.Params.twitter }}
     <span class="fa-stack fa-lg">
         <a href="https://twitter.com/{{ . }}" target="_blank">
