@@ -19,14 +19,14 @@ base-article()
   text-decoration: none
   background: background
   font-family: font-header
-  padding: 1.5rem 0rem
+  padding: 1.5rem 2rem
   .container
     .title
       font-size: 2.4rem
-      margin: 0
+      margin: 0 .15rem
       a{ color: title }
     .subtitle
-      margin: 0.5rem 0 1rem 0
+      margin: 0.5rem 0 1rem .15rem
       color: text
       font-size: 1rem
     separater(bg)
@@ -37,7 +37,7 @@ base-article()
       background: bg
     .separater
       float: left
-      margin-left: 0.05rem
+      margin-left: .15rem
       for x in (1..5)
         .bar{x}
           separater: (bar + x)
@@ -108,7 +108,7 @@ base-article()
       color: #ff5722
 
 .social
-  margin: -2.1rem -0.2rem
+  margin: -2.1rem .0rem
   float: right
   li
     list-style: none

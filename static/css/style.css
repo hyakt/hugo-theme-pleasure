@@ -554,23 +554,23 @@ body {
   text-decoration: none;
   background: #f0f3ed;
   font-family: 'Concert One', sans-serif;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 2rem;
 }
 .header .container .title {
   font-size: 2.4rem;
-  margin: 0;
+  margin: 0 0.15rem;
 }
 .header .container .title a {
   color: #444552;
 }
 .header .container .subtitle {
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0.15rem;
   color: #444552;
   font-size: 1rem;
 }
 .header .container .separater {
   float: left;
-  margin-left: 0.05rem;
+  margin-left: 0.15rem;
 }
 .header .container .separater .bar1 {
   height: 0.3rem;
@@ -725,7 +725,7 @@ body {
   color: #ff5722;
 }
 .social {
-  margin: -2.1rem -0.2rem;
+  margin: -2.1rem 0rem;
   float: right;
 }
 .social li {
