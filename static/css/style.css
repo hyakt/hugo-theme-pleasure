@@ -1071,3 +1071,10 @@ body {
   margin: 0 1.5rem;
   line-height: 10px;
 }
+.page404 {
+  text-align: center;
+}
+.page404 #sad {
+  font-size: 14rem;
+  margin: 0 auto;
+}
