@@ -3,9 +3,9 @@
     <span class="fa-stack fa-lg">
         <a href="{{ .Site.Params.about }}">
             {{ if .Site.Params.mail }}
-            <img class="fa fa-user fa-stack-1x fa-inverse" src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.mail }}?d=identicon">
+            <img class="fa-user" src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.mail }}?d=identicon">
             {{ else }}
-            <i class="fa fa-user fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            <i class="fas fa-user fa-stack-1x fa-inverse" aria-hidden="true"></i>
             {{ end }}
         </a>
     </span>
@@ -13,28 +13,28 @@
     {{ with .Site.Params.twitter }}
     <span class="fa-stack fa-lg">
         <a href="https://twitter.com/{{ . }}" target="_blank">
-            <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
         </a>
     </span>
     {{ end }}
     {{ with .Site.Params.github }}
     <span class="fa-stack fa-lg">
         <a href="https://github.com/{{ . }}" target="_blank">
-            <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
         </a>
     </span>
     {{ end }}
     {{ with .Site.Params.linkedin }}
     <span class="fa-stack fa-lg">
         <a href="https://linkedin.com/in/{{ . }}" target="_blank">
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" aria-hidden="true"></i>
         </a>
     </span>
     {{ end }}
     {{ with .Site.Params.facebook }}
     <span class="fa-stack fa-lg">
         <a href="https://facebook.com/{{ . }}" target="_blank">
-            <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+            <i class="fab fa-facebook-f fa-stack-1x fa-inverse" aria-hidden="true"></i>
         </a>
     </span>
     {{ end }}

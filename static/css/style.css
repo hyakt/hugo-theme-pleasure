@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Concert+One");
 @import url("https://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -930,14 +930,14 @@ body {
     transform: rotate(4deg);
   }
 }
-.social .fa-linkedin {
+.social .fa-linkedin-in {
   height: 2.4rem;
   width: 2.4rem;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   background: #006db3;
 }
-.social .fa-linkedin:hover {
+.social .fa-linkedin-in:hover {
   animation: shake 0.4s linear;
 }
 @-moz-keyframes shake {
@@ -996,14 +996,14 @@ body {
     transform: rotate(4deg);
   }
 }
-.social .fa-facebook {
+.social .fa-facebook-f {
   height: 2.4rem;
   width: 2.4rem;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   background: #365397;
 }
-.social .fa-facebook:hover {
+.social .fa-facebook-f:hover {
   animation: shake 0.4s linear;
 }
 @-moz-keyframes shake {
