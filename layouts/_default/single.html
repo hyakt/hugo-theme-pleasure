@@ -14,8 +14,9 @@
 
     <article>
         {{ .Content }}
+        {{ partial "disqus.html" . }}
     </article>
-    
+
     <script type="text/javascript" src="{{ "js/bundle.js" | relURL }}"></script>
 </div>
 {{ end }}
