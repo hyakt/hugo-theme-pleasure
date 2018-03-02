@@ -1,0 +1,23 @@
+{{ define "title" }}{{ .Title }} | {{ end }}
+
+{{ define "main" }}
+<div class="terms">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <ul class="p-terms">
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms }}
+        <li>
+            <h2 class="terms-title">
+                <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
+                <ul>
+                    {{ range first 5 $value.Pages.Reverse }}
+                    <li>{{ .LinkTitle }}</li>
+                    {{ end }}
+                </ul>
+            </h2>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
