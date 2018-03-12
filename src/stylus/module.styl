@@ -37,7 +37,7 @@ base-article()
       +breakpoint(sm-up)
         width: 4.6vw
       float: left
-      opacity: 0.8
+sc      opacity: 0.8
       background: bg
     .separater
       float: left
@@ -135,28 +135,33 @@ base-article()
       font-style: normal
       font-weight: 700
       color: #ff5722
+
 .share
+  padding: 0
+  margin: 1rem 0 0 0
+  list-style: none
   li
     font-size: 1rem
     display: inline-block
-    list-style: none
+    margin: 0px
     font-size: 1.5rem
-  share-icon(bg)
-    height: 2.4rem
-    width: 2.4rem
+  share-button(color)
+    padding: 0.3rem
+    font-size: 0.7rem
+    font-weight: normal
+    border: solid 1px color
     border-radius: 4px
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
-    background: bg
+    a { color: color !important }
   .twitter
-    share-icon: color-twitter
+    share-button: color-twitter
   .facebook
-    share-icon: color-facebook
+    share-button: color-facebook
   .googleplus
-    share-icon: color-plus-google
+    share-button: color-plus-google
   .hatena
-    share-icon: color-hatena
+    share-button: color-hatena
   .pocket
-    share-icon: color-pocket
+    share-button: color-pocket
 
 .social
   margin: -2.1rem .0rem

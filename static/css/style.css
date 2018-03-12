@@ -568,94 +568,27 @@ body {
   color: #444552;
   font-size: 1rem;
 }
-.header .container .separater {
+sc opacity: 0.8 {
+  background: bg;
+}
+.separater {
   float: left;
   margin-left: 0.15rem;
 }
-.header .container .separater .bar1 {
-  height: 0.3rem;
-  width: 6rem;
-  float: left;
-  opacity: 0.8;
-  background: #e94858;
+.separater .bar1 {
+  separater: #e94858;
 }
-@media only screen and (max-width: 992px) {
-  .header .container .separater .bar1 {
-    width: 10vw;
-  }
+.separater .bar2 {
+  separater: #f3a32a;
 }
-@media only screen and (max-width: 768px) {
-  .header .container .separater .bar1 {
-    width: 4.6vw;
-  }
+.separater .bar3 {
+  separater: #82bf6e;
 }
-.header .container .separater .bar2 {
-  height: 0.3rem;
-  width: 6rem;
-  float: left;
-  opacity: 0.8;
-  background: #f3a32a;
+.separater .bar4 {
+  separater: #3cb4cb;
 }
-@media only screen and (max-width: 992px) {
-  .header .container .separater .bar2 {
-    width: 10vw;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header .container .separater .bar2 {
-    width: 4.6vw;
-  }
-}
-.header .container .separater .bar3 {
-  height: 0.3rem;
-  width: 6rem;
-  float: left;
-  opacity: 0.8;
-  background: #82bf6e;
-}
-@media only screen and (max-width: 992px) {
-  .header .container .separater .bar3 {
-    width: 10vw;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header .container .separater .bar3 {
-    width: 4.6vw;
-  }
-}
-.header .container .separater .bar4 {
-  height: 0.3rem;
-  width: 6rem;
-  float: left;
-  opacity: 0.8;
-  background: #3cb4cb;
-}
-@media only screen and (max-width: 992px) {
-  .header .container .separater .bar4 {
-    width: 10vw;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header .container .separater .bar4 {
-    width: 4.6vw;
-  }
-}
-.header .container .separater .bar5 {
-  height: 0.3rem;
-  width: 6rem;
-  float: left;
-  opacity: 0.8;
-  background: #16434b;
-}
-@media only screen and (max-width: 992px) {
-  .header .container .separater .bar5 {
-    width: 10vw;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header .container .separater .bar5 {
-    width: 4.6vw;
-  }
+.separater .bar5 {
+  separater: #16434b;
 }
 .footer {
   text-align: center;
@@ -798,46 +731,66 @@ body {
   font-weight: 700;
   color: #ff5722;
 }
+.share {
+  padding: 0;
+  margin: 1rem 0 0 0;
+  list-style: none;
+}
 .share li {
   font-size: 1rem;
   display: inline-block;
-  list-style: none;
+  margin: 0px;
   font-size: 1.5rem;
 }
 .share .twitter {
-  height: 2.4rem;
-  width: 2.4rem;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  border: solid 1px #00a9f1;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: #00a9f1;
+}
+.share .twitter a {
+  color: #00a9f1 !important;
 }
 .share .facebook {
-  height: 2.4rem;
-  width: 2.4rem;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  border: solid 1px #365397;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: #365397;
+}
+.share .facebook a {
+  color: #365397 !important;
 }
 .share .googleplus {
-  height: 2.4rem;
-  width: 2.4rem;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  border: solid 1px #e0452c;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: #e0452c;
+}
+.share .googleplus a {
+  color: #e0452c !important;
 }
 .share .hatena {
-  height: 2.4rem;
-  width: 2.4rem;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  border: solid 1px #586cea;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: #586cea;
+}
+.share .hatena a {
+  color: #586cea !important;
 }
 .share .pocket {
-  height: 2.4rem;
-  width: 2.4rem;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  border: solid 1px #ee4256;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background: #ee4256;
+}
+.share .pocket a {
+  color: #ee4256 !important;
 }
 .social {
   margin: -2.1rem 0rem;
