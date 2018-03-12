@@ -9,6 +9,7 @@
                 {{ .Date.Format (.Site.Params.dateformat | default "Jan 2, 2006") }}
             </time>
             | {{ .FuzzyWordCount }} Words
+            {{ partial "share.html" . }}
         </div>
     </header>
 

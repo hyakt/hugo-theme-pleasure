@@ -135,6 +135,28 @@ base-article()
       font-style: normal
       font-weight: 700
       color: #ff5722
+.share
+  li
+    font-size: 1rem
+    display: inline-block
+    list-style: none
+    font-size: 1.5rem
+  share-icon(bg)
+    height: 2.4rem
+    width: 2.4rem
+    border-radius: 4px
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    background: bg
+  .twitter
+    share-icon: color-twitter
+  .facebook
+    share-icon: color-facebook
+  .googleplus
+    share-icon: color-plus-google
+  .hatena
+    share-icon: color-hatena
+  .pocket
+    share-icon: color-pocket
 
 .social
   margin: -2.1rem .0rem
