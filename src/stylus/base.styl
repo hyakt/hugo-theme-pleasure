@@ -41,19 +41,27 @@ font-header       ='Concert One', sans-serif;
 font-article      =-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
 font-code         =Menlo, consolas, monospacex
 
-html
-  font-family: font-article
-  font-size: 16px
+screen-sm = 768px
+screen-md = 992px
+screen-lg = 1200px
 
-a
-  color: text
-  text-decoration: none
-
-body
-  color: text
-  background: background
-
-.container
-  width: 100%
-  max-width: 800px
-  margin: 0 auto
+breakpoint(bpName)
+    for name in bpName
+        if name == 'sm'
+            @media only screen and (min-width: screen-sm)
+                {block}
+        if name == 'md'
+            @media only screen and (min-width: screen-md)
+                {block}
+        if name == 'lg'
+            @media only screen and (min-width: screen-lg)
+                {block}
+        if name == 'sm-up'
+            @media only screen and (max-width: screen-sm)
+                {block}
+        if name == 'md-up'
+            @media only screen and (max-width: screen-md)
+                {block}
+        if name == 'lg-up'
+            @media only screen and (max-width: screen-lg)
+                {block}
