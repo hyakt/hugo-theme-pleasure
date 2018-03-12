@@ -568,27 +568,94 @@ body {
   color: #444552;
   font-size: 1rem;
 }
-sc opacity: 0.8 {
-  background: bg;
-}
-.separater {
+.header .container .separater {
   float: left;
   margin-left: 0.15rem;
 }
-.separater .bar1 {
-  separater: #e94858;
+.header .container .separater .bar1 {
+  height: 0.3rem;
+  width: 6rem;
+  float: left;
+  opacity: 0.8;
+  background: #e94858;
 }
-.separater .bar2 {
-  separater: #f3a32a;
+@media only screen and (max-width: 992px) {
+  .header .container .separater .bar1 {
+    width: 10vw;
+  }
 }
-.separater .bar3 {
-  separater: #82bf6e;
+@media only screen and (max-width: 768px) {
+  .header .container .separater .bar1 {
+    width: 4.6vw;
+  }
 }
-.separater .bar4 {
-  separater: #3cb4cb;
+.header .container .separater .bar2 {
+  height: 0.3rem;
+  width: 6rem;
+  float: left;
+  opacity: 0.8;
+  background: #f3a32a;
 }
-.separater .bar5 {
-  separater: #16434b;
+@media only screen and (max-width: 992px) {
+  .header .container .separater .bar2 {
+    width: 10vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .container .separater .bar2 {
+    width: 4.6vw;
+  }
+}
+.header .container .separater .bar3 {
+  height: 0.3rem;
+  width: 6rem;
+  float: left;
+  opacity: 0.8;
+  background: #82bf6e;
+}
+@media only screen and (max-width: 992px) {
+  .header .container .separater .bar3 {
+    width: 10vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .container .separater .bar3 {
+    width: 4.6vw;
+  }
+}
+.header .container .separater .bar4 {
+  height: 0.3rem;
+  width: 6rem;
+  float: left;
+  opacity: 0.8;
+  background: #3cb4cb;
+}
+@media only screen and (max-width: 992px) {
+  .header .container .separater .bar4 {
+    width: 10vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .container .separater .bar4 {
+    width: 4.6vw;
+  }
+}
+.header .container .separater .bar5 {
+  height: 0.3rem;
+  width: 6rem;
+  float: left;
+  opacity: 0.8;
+  background: #16434b;
+}
+@media only screen and (max-width: 992px) {
+  .header .container .separater .bar5 {
+    width: 10vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .container .separater .bar5 {
+    width: 4.6vw;
+  }
 }
 .footer {
   text-align: center;
