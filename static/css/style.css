@@ -640,6 +640,30 @@ body {
 .summary footer a {
   color: #444552;
 }
+.terms ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+.terms ul li ul li {
+  display: block;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: normal;
+  padding: 0 1.2rem;
+}
+.terms ul li ul li:before {
+  all: initial;
+}
+.terms ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02b";
+  padding: 0.5rem;
+  color: #efa718;
+}
 .post {
   padding: 1.5rem;
   margin: 0.5rem 0.1rem;

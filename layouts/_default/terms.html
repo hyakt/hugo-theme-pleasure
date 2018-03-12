@@ -4,18 +4,16 @@
 <div class="terms">
     <h1 class="title">{{ .Title }}</h1>
 
-    <ul class="p-terms">
+    <ul>
         {{ $data := .Data }}
         {{ range $key, $value := .Data.Terms }}
         <li>
-            <h2 class="terms-title">
-                <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
-                <ul>
+            <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
+            <ul>
                     {{ range first 5 $value.Pages.Reverse }}
-                    <li>{{ .LinkTitle }}</li>
+                <li><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
                     {{ end }}
-                </ul>
-            </h2>
+            </ul>
         </li>
         {{ end }}
     </ul>
